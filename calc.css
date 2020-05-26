@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    font-family: Jost, Helvetica, sans-serif;
+}
+
+body {
+    /* background: linear-gradient(to right, rgb(73, 255, 255), rgb(33, 211, 57)); */
+    background-color: black;
+}
+
+h1 {
+   text-align: center;
+   position: relative;
+   top: 35px;
+   color: white;
+}
+
+#calculator {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: minmax(115px, auto) repeat(5, 55px);
+    /* background-color: black; */
+    /* width: 300px; */
+    margin: 0 auto;
+    top: 35px;
+    position: relative;
+}
+
+#screen {
+    background-color: rgb(255, 255, 255);
+    border-style: double;
+    border-width: 15px;
+    border-color: black;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-right: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#history {
+    font-size: 18pt;  
+    color: rgb(80, 80, 80)
+}
+
+#output {
+    font-size: 22pt;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-width: 4px;
+    outline: black;
+    outline: none;
+    cursor: pointer;
+    border-radius: 35%;
+}
+
+.number, .operator1, .operator2, #equals {
+    font-size: 20pt;
+    /* border-color: rgb(73, 255, 255); */
+    border-color: white;
+}
+
+#equals {
+    /* border-color: rgb(73, 255, 82); */
+    border-color: rgb(165, 165, 165);
+}
+
+.operator1 {
+    /* border-color: rgb(255, 73, 73); */
+    border-color: rgb(165, 165, 165);
+}
+
+.operator2, .operator3 {
+    font-size: 14pt;
+    /* border-color: rgb(255, 170, 73); */
+    border-color: rgb(165, 165, 165);
+}
+
+.operator3 {
+    font-size: 20pt;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, .95);
+    color: black;
+}
+
+/* button:active {
+    font-size: 16pt;
+} */
+
+
+
