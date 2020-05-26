@@ -1,2 +1,2 @@
 # Basic-Calculator
-A simple calculator with basic functions made with HTML/CSS/JavaScript
+A simple calculator with basic functions. This was made with HTML/CSS/JavaScript.
